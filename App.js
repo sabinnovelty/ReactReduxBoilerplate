@@ -5,12 +5,12 @@ import { createStore } from 'redux';
 import rootReducer from './src/reducers';
 import { connect } from 'react-redux'
 import Library from './src/components/Library';
-
+import AppNavigator from './src/routes/routes';
  export default class App extends Component {
   render() {
     return (
       <Provider store={ createStore( rootReducer )}>
-        <Library />
+       <AppNavigator />
       </Provider>
   
     );
