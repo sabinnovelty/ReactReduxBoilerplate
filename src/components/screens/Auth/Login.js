@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View , Text } from 'react-native';
+import { View , Text ,Button } from 'react-native';
 import { connect } from 'react-redux';
 
 
@@ -8,6 +8,7 @@ class Login extends Component {
         return (
         <View>
             <Text> Login component is comming soon.</Text>
+            <Button title="login " onPress={()=>this.props.navigation.navigate('Home')}/>
         </View>
         )
     }
